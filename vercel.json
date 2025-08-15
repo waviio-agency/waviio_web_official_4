@@ -1,7 +1,9 @@
 {
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|assets/|.*\\.).*)",
       "destination": "/index.html"
     }
   ],
@@ -39,6 +41,5 @@
   ],
   "trailingSlash": false,
   "cleanUrls": true,
-  "framework": "vite",
-  "outputDirectory": "dist"
+  "framework": "vite"
 }

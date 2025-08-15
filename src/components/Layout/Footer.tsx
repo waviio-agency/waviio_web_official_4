@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, ExternalLink } from 'lucide-react';
 
 const Footer: React.FC = () => {
@@ -25,9 +26,9 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
               <li><a href="/services" className="text-gray-400 hover:text-blue-400 transition-colors">Sites vitrine</a></li>
-              <li><a href="/services" className="text-gray-400 hover:text-blue-400 transition-colors">E-commerce</a></li>
-              <li><a href="/services" className="text-gray-400 hover:text-blue-400 transition-colors">Applications web</a></li>
-              <li><a href="/services" className="text-gray-400 hover:text-blue-400 transition-colors">Maintenance</a></li>
+              <li><Link to="/services/ecommerce" className="text-gray-400 hover:text-blue-400 transition-colors">E-commerce</Link></li>
+              <li><Link to="/services/webdesign" className="text-gray-400 hover:text-blue-400 transition-colors">Applications web</Link></li>
+              <li><Link to="/services/maintenance" className="text-gray-400 hover:text-blue-400 transition-colors">Maintenance</Link></li>
             </ul>
           </div>
 
@@ -41,8 +42,8 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-blue-400" />
-                <a href="mailto:contact@waviio.fr" className="text-gray-400 hover:text-blue-400 transition-colors text-sm">
-                  contact@waviio.fr
+                <a href="mailto:contact@waviio.com" className="text-gray-400 hover:text-blue-400 transition-colors text-sm">
+                  contact@waviio.com
                 </a>
               </div>
               <div className="flex items-center space-x-2">

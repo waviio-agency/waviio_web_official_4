@@ -125,6 +125,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="mentions-legales" element={<MentionsLegales />} />
           <Route path="politique-confidentialite" element={<PolitiqueConfidentialite />} />
+          <Route path="conditions-generales" element={<ConditionsGenerales />} />
           <Route path="produits" element={<Products />} />
           <Route path="produits2" element={<Products />} />
         </Route>
