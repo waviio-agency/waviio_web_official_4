@@ -1,7 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "/((?!api|_next/static|_next/image|favicon.ico|.*\\.).*)",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ],
@@ -28,7 +28,7 @@
       ]
     },
     {
-      "source": "/static/(.*)",
+      "source": "/assets/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -39,5 +39,6 @@
   ],
   "trailingSlash": false,
   "cleanUrls": true,
-  "framework": "vite"
+  "framework": "vite",
+  "outputDirectory": "dist"
 }
